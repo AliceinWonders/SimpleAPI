@@ -1,0 +1,9 @@
+[Unit]
+Description=Hello World console application
+[Service]
+ExecStart=/usr/bin/dotnet /var/www/app/SimpleAPI.dll
+SyslogIdentifier=SimpleAPI
+User=student
+Environment=DOTNET_ROOT=/usr/lib64/dotnet
+[Install]
+WantedBy=multi-user.target
